@@ -3,12 +3,16 @@ import { BrowserAnimationsModule  } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import {MatCheckboxModule , MatRadioModule ,MatSelectModule, MatInputModule, MatToolbarModule, MatButtonModule, MatDividerModule} from '@angular/material';
+import {MatCheckboxModule , MatRadioModule ,MatSelectModule, MatInputModule, MatToolbarModule, MatButtonModule, MatDividerModule, MatIconModule, MatSidenavModule} from '@angular/material';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,9 @@ import {MatCheckboxModule , MatRadioModule ,MatSelectModule, MatInputModule, Mat
     MatInputModule,
     MatToolbarModule,
     MatButtonModule,
-    MatDividerModule
+    MatDividerModule,
+    MatIconModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]

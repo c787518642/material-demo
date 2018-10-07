@@ -1,0 +1,64 @@
+.app-heading {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, .2), 0 6px 10px 0 rgba(0, 0, 0, .14), 0 1px 18px 0 rgba(0, 0, 0, .12);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    height: 92px;
+}
+
+.default_nav {
+    display: none;
+}
+
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+/* .example-container {
+    padding-top: 65px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eee;
+} */
+
+/* mat-sidenav {
+    padding-top: 65px;
+} */
+
+.second_nav {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.second_nav>a {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /* border-bottom: 5px solid #fff; */
+}
+
+@media(min-width:720px) {
+    .app-heading {
+        height: auto;
+    }
+    .default_nav {
+        display: inline;
+    }
+    .second_nav {
+        display: none;
+    }
+ 
+}

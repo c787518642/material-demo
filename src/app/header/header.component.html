@@ -1,0 +1,23 @@
+<mat-toolbar color="primary" class="app-heading" role="heading">
+    <mat-toolbar-row>
+      <a mat-icon-button (click)="toggle()" class="list_menu">
+        <mat-icon>menu</mat-icon>
+      </a>
+      <a mat-button>
+        <!-- <mat-icon>add_a_photo</mat-icon> -->
+        综合管理系统
+      </a>
+  
+      <span class="default_nav">
+        <a mat-button *ngFor="let i of menus">{{i}}</a>
+      </span>
+      <span class="example-fill-remaining-space"></span>
+      <a mat-icon-button>
+        <mat-icon>account_circle</mat-icon>
+      </a>
+      <nav class="second_nav">
+        <a mat-button *ngFor="let i of menus">{{i}}</a>
+      </nav>
+    </mat-toolbar-row>
+  
+  </mat-toolbar>
