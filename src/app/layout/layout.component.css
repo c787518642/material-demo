@@ -1,0 +1,45 @@
+.layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+}
+
+.app-container {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 92px;
+    /* content滚动条 */
+    /* overflow: auto; */
+}
+
+@media (min-width:1025px) {
+    .app-container {
+        overflow: auto;
+    }
+}
+
+.main-content {
+    padding: 0.5rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+@media(min-width:720px) {
+    .app-container {
+        margin-top: 65px;
+    }
+}

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { menu } from '../../services/menu';
+
 
 @Component({
   selector: 'app-header',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  menus=["功能一","功能二","功能三","功能四"]
+  menu: { label: string, link: string }[] = menu
   constructor() { }
 
   ngOnInit() {
   }
+  toggle() {
 
+  }
 }
