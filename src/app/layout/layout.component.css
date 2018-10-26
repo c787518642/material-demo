@@ -25,11 +25,11 @@
     /* overflow: auto; */
 }
 
-@media (min-width:1025px) {
+/* @media (min-width:1025px) {
     .app-container {
         overflow: auto;
     }
-}
+} */
 
 .main-content {
     padding: 0.5rem;

@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
-import { MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule, MatToolbarModule, MatButtonModule, MatDividerModule, MatIconModule, MatSidenavModule } from '@angular/material';
+import { MatCheckboxModule, MatRadioModule, MatSelectModule, MatInputModule, MatToolbarModule, MatButtonModule, MatDividerModule, MatIconModule, MatSidenavModule, MatListModule, MatTreeModule } from '@angular/material';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { PostsComponent } from './pages/posts/posts.component';
 import { ErrorPagesComponent } from './error-pages/error-pages.component';
+import { TreeComponent, FileDatabase } from './pages/tree/tree.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ErrorPagesComponent } from './error-pages/error-pages.component';
     LayoutComponent,
     DashboardComponent,
     PostsComponent,
-    ErrorPagesComponent
+    ErrorPagesComponent,
+    TreeComponent
   ],
   imports: [
     AppRoutingModule,
@@ -38,9 +40,12 @@ import { ErrorPagesComponent } from './error-pages/error-pages.component';
     MatDividerModule,
     MatIconModule,
     MatSidenavModule,
+    MatListModule,
+    MatTreeModule
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: "demo" }
+    { provide: APP_BASE_HREF, useValue: "demo" },
+    FileDatabase
   ],
   bootstrap: [AppComponent]
 })

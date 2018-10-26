@@ -1,3 +1,4 @@
+import { TreeComponent } from './pages/tree/tree.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,6 +15,7 @@ const routes: Routes = [
       { path: "dashboard", component: DashboardComponent },
       { path: "posts/:id", component: PostsComponent },
       { path: "posts", component: PostsComponent },
+      { path: "tree", component: TreeComponent },
       { path: "error", component: ErrorPagesComponent },
       { path: "", redirectTo: "dashboard", pathMatch: 'full' },
       { path: "**", redirectTo: "dashboard" }

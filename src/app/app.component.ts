@@ -11,4 +11,5 @@ export class AppComponent {
   toggle(){
     this.isOpen=!this.isOpen;
   }
+
 }

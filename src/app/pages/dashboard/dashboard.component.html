@@ -1,6 +1,15 @@
 <!-- <a  mat-flat-button [routerLink]="['/pages/posts',id]">go to posts</a> -->
 
-<p>
-  dashboard works!
-</p>
 
+<!-- <p (click)="go()" >
+  dashboard works!
+</p> -->
+<input (change)="onFileAdded()" [hidden]="true" id="input-file-id" #file multiple type="file" />
+<button  mat-flat-button color="primary" (click)="onUpload()">Choose Files</button>
+
+<ul>
+  <li *ngFor="let i of fileList">
+    {{i.name}}
+  </li>
+</ul>
+<div>{{file.nativeElement?.files}}</div>

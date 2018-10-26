@@ -7,8 +7,8 @@ html, body {
     height: 100%;
     /* overflow:hidden  */
 }
-@media (min-width:1025px){
+/* @media (min-width:1025px){
     html, body {
         overflow:hidden 
     }
-}
+} */
