@@ -16,9 +16,7 @@ export class DashboardComponent implements OnInit {
     console.log(this.fileList);
     
   }
-  go(){
-    console.log("sss");
-    
+  go(){    
     window.scrollTo(0,800)
   }
   onUpload(){

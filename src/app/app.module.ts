@@ -45,7 +45,7 @@ import { TreeComponent, FileDatabase } from './pages/tree/tree.component';
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: "demo" },
-    FileDatabase
+    FileDatabase,
   ],
   bootstrap: [AppComponent]
 })
