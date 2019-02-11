@@ -9,6 +9,7 @@ export class PostsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
   folders=[{
     name:"sss",updated:"sss"

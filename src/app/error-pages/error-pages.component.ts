@@ -9,7 +9,7 @@ import { debounceTime } from 'rxjs/operators';
 })
 export class ErrorPagesComponent implements OnInit {
   scrollEvent=fromEvent(window,"scroll");
-  // clickOb=new EventEmitter()
+  buttonEvent=new EventEmitter()
   clickOb=new Subject()
   constructor() { }
 
@@ -30,5 +30,8 @@ export class ErrorPagesComponent implements OnInit {
 
     }
 
+  }
+  onButtonClick(){
+    this.buttonEvent.emit("xxxxx")
   }
 }
